@@ -8,8 +8,6 @@ import RouteData from "./Routes/RouteData";
 import PrivateRoute from "./Routes/PrivateRoute";
 import store from "./Redux/Store";
 import UserRoute from "./Routes/UserRoute";
-
-
 function App() {
   return (
     <Provider store={store}>
