@@ -1,0 +1,26 @@
+.login_container {
+    background: $bg_color;
+    height: 100vh;
+
+    .form-control {
+        margin-bottom: 0;
+    }
+
+    .pass-div {
+        position: relative;
+
+        i {
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    .btn-outline-primary {
+        width: 100%;
+        transition: all 0.3s;
+
+        &:hover {
+            background: $secondary_color;
+        }
+    }
+}

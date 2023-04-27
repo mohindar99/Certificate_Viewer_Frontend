@@ -1,0 +1,122 @@
+.no-icon {
+  font-size: larger;
+  cursor: pointer;
+}
+.no-icon:hover {
+  color: #002c72;
+}
+.userContainer.container {
+  left: inherit !important;
+  top: inherit !important;
+}
+.war {
+  color: rgb(161, 65, 10);
+  margin: 10px;
+}
+.div-submit {
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  div {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    label {
+      margin: 10px;
+
+    }
+    p {
+      margin: 10px;
+    }
+  }
+}
+.userView {
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  padding: 30px;
+
+  @media(max-width:767px){
+
+    .navbar .container {
+      left: 0;
+      width: 100%;
+      position: relative;
+      top: inherit;
+  }
+
+    padding: 15px;
+
+    }
+  .user-info {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 40px;
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.08);
+    
+    .info-controls {
+      display: flex;
+     
+      p {
+        margin-left: 5px;
+        @media(max-width:767px){
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  .item-div {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    // box-shadow: -1px 10px 22px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.08);
+    .info-submit {
+      display: block;
+      margin-top: 45px;
+    }
+    .info-controls {
+      display: flex;
+      margin-bottom: 15px;
+      @media(max-width:767px){
+        
+        display: block;
+      }
+      label {
+        margin-left: 10px;
+        @media(max-width:767px){
+          margin: 0;
+          display: block;
+        }
+      }
+      p {
+        margin-left: 10px;
+        @media(max-width:767px){
+          margin-left: 0px;
+          
+        }
+      }
+      .inputStyle {
+        margin-left: 10px;
+        border: none;
+        border-bottom: 2px solid black;
+        @media(max-width:767px){
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  @media(max-width:1280px){
+    h4{
+      margin-top:  0;
+   }
+   .full-767{
+     flex: 100%;
+     max-width: 100%;
+   }
+  }
+}
+

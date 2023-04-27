@@ -1,0 +1,97 @@
+.SideEditor {
+  // width: 280px;
+  height: auto;
+  display: block;
+  border: 1px solid #49474736;
+  box-shadow: 2px 10px 18px -8px rgba(0, 0, 0, 0.75);
+
+  .control-panel-switch {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 425px) {
+      width: 100%;
+    }
+    label {
+      color: #343634;
+    }
+    .switch {
+      color: green;
+      margin-left: auto;
+    }
+  }
+  .SideBtnAtt {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .side-control {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    h {
+      color: #343634;
+    }
+    .radios {
+      margin: 10px;
+      height: 20px;
+      width: 20px;
+      align-items: center;
+    }
+    .check-panel {
+      margin: 10px;
+      input {
+        margin-left: 5px;
+      }
+    }
+  }
+  .side-control-panel {
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: start;
+    h {
+      color: #343634;
+    }
+    .text-div h {
+      display: block;
+      margin: 5px;
+    }
+    .image-preview-div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 5px;
+      // margin: 5px;
+    }
+    .imagePreview {
+      height: 100px;
+      width: 100px;
+    }
+    .text-panel {
+      // padding: 10px;
+      // border: 2px solid #35333336;
+      // border-radius: 5px;
+      // margin-left: 5px;
+      // background-color: #35333336;
+      .SideBtn {
+        // margin-left: 10px;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: white;
+        border: 2px solid #002c72;
+        margin-top: 5px;
+
+        &:hover,
+        &:active,
+        &:focus {
+          background-color: #002c72;
+          border: 2px solid #002c72;
+          color: #fff;
+          box-shadow: none;
+          outline: 0;
+        }
+      }
+    }
+  }
+}

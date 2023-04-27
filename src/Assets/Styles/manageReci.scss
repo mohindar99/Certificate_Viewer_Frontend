@@ -1,0 +1,202 @@
+  .Manage-Reci {
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 30px;
+    @media(max-width:767px){
+      padding: 15px;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+    }
+    li {
+      list-style: none;
+      display: flex;
+    }
+    .upper-panel {
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      @media(max-width:767px){
+        display: block;
+        label{
+          display: block;
+          margin-bottom: 10px;
+        }
+        .btn{
+          width: 100%;
+          margin: 0 !important;
+        }
+      }
+      .add-div {
+      }
+      .upload-div {
+        margin-left: auto;
+
+        padding: 10px;
+        @media(max-width:767px){
+          padding: 0px;
+        }
+        p {
+          font-size: 14px;
+        }
+        .div-upload-control {
+          margin: 10px;
+          display: flex;
+          align-items: center;
+          @media(max-width:767px){
+            display: block;
+            margin: 10px 0;
+          
+          }
+          .SideBtn {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .lower-panel {
+      display: block;
+      margin: 10px;
+      @media(max-width:767px){
+        margin: 0;
+      }
+      .search-limit {
+        display: flex;
+        @media(max-width:767px){
+          display: block;
+        }
+        .search-div {
+          display: flex;
+          padding: 30px 0;
+          @media(max-width:767px){
+            display: block;
+            text-align: center;
+           .search-icon{
+              padding: 0 10px;
+              white-space: nowrap;
+              margin: 0 !important;
+              min-height: 40px;
+            }
+           }
+         
+         
+          .search-bar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #002c72;
+            border-radius: 20px;
+            padding: 5px;
+            @media(max-width:767px){
+             margin-bottom: 20px;
+             }
+            .search-input {
+              background-color: transparent;
+              border: none;
+              font-weight: bold;
+              outline: 0;
+              color: #606163;
+              margin-left: 10px;
+              @media(max-width:767px){
+                margin: 0;
+                text-align: center;
+                }
+            }
+            .search-icon {
+              margin: 10px;
+            }
+          }
+        }
+        .limit-div {
+          padding: 20px 0;
+          margin-left: auto;
+          label {
+            color: #121212;
+          }
+          input {
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            width: 70px;
+            text-align: center;
+            border: 2px solid #002c72;
+          }
+        }
+      }
+      .table {
+        Table {
+          table-layout: fixed;
+          thead {
+            border: 1px solid #505050;
+            width: 100%;
+          }
+          th {
+            color: #505050;
+            font-weight: 600;
+          }
+          tbody {
+            width: 100%;
+            th {
+              .icons {
+                display: flex;
+                align-content: center;
+                .icon-div {
+                  align-items: center;
+                  margin-left: 10px;
+                  .icon-action {
+                    color: black;
+                    font-size: 20px;
+                  }
+                  .icon-action:hover {
+                    color: #0a80e0;
+                    box-shadow: 5px 10px 31px 6px rgba(0, 0, 0, 0.75);
+                  }
+                }
+              }
+            }
+            .icon-action {
+              color: #333333;
+              width: 28px;
+              height: 28px;
+              padding: 3px;
+              border-radius: 50%;
+              transition: all 0.3s;
+              cursor: pointer;
+            }
+            .icon-action:hover {
+              color: #fff;
+              background: #002c72;
+              box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dateTable,
+  .updateRecipient {
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    padding: 30px;
+    @media(max-width:767px){
+      .main-panel > .content {
+        min-height: 100% !important;
+    }
+      .card-header {
+        padding: 0 !important;
+    }
+      padding: 15px;
+      .row{
+        .col {
+          flex: 100%;
+          padding: 0;
+      
+        }
+      }
+    }
+  }

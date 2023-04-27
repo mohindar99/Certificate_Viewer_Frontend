@@ -1,0 +1,175 @@
+.canvas {
+  width: 100%;
+  height: auto;
+
+  @media screen and (max-width: 1497px) {
+    margin-top: 30px;
+  }
+
+  .palette {
+    height: auto;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    box-shadow: 2px 10px 18px -8px rgba(0, 0, 0, 0.75);
+    overflow-x: auto;
+    margin-left: 0;
+    .textPalette {
+      display: block;
+      .icon-btn {
+        color: #333333;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        transition: all 0.3s;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+      }
+      .icon-btn:hover,
+      .icon-btn:active,
+      .icon-btn:focus,
+      .icon-btn:target {
+        color: #fff;
+        background: #002c72;
+        box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.05);
+      }
+      .upper {
+        display: flex;
+        flex-wrap: wrap;
+        .control {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5px;
+
+          .icons {
+            font-size: 20px;
+            margin-left: 10px;
+          }
+          h {
+            margin-left: 5px;
+          }
+          #slider {
+            width: 100px;
+            margin-left: 15px;
+          }
+          #rot {
+            margin-left: 5px;
+            background-color: white;
+            width: 100px;
+          }
+          #font {
+            margin-left: 5px;
+            background-color: white;
+            width: 100px;
+          }
+        }
+      }
+      .lower {
+        display: flex;
+        .control {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 5px;
+          .tog-btn{
+            padding: 0;
+            margin: 5px;
+            .icons {
+              font-size: 20px;
+              margin: 10px;
+            }
+          }
+
+            
+          
+         
+          h {
+            margin-left: 5px;
+          }
+          #slider {
+            width: 100px;
+            margin-left: 15px;
+          }
+          #rot {
+            margin-left: 5px;
+            background-color: white;
+            width: 100px;
+          }
+          #font {
+            margin-left: 5px;
+            background-color: white;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .canvas-control {
+    border: 1px solid black;
+    margin: 10px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: fill;
+
+    .dragImage {
+      z-index: 1;
+    }
+    .textDiv {
+      width: fit-content;
+      height: fit-content;
+      border: 1px solid black;
+    }
+    .divDrag {
+      height: auto;
+      width: auto;
+      white-space: pre-wrap;
+
+      .textDiv {
+        border: none;
+      }
+      input {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .divDragInput {
+      height: auto;
+      width: auto;
+      white-space: pre-wrap;
+      input {
+        height: 100%;
+        width: 100%;
+      }
+      .textDiv {
+        border: none;
+      }
+      input:focus {
+        border: 2px dashed black;
+      }
+    }
+    .divDragInput:hover {
+      border: 2px dashed black;
+    }
+    .draggable {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px dashed #5a5959;
+      background: transparent;
+      z-index: 100;
+    }
+    .attribute {
+      background-color: transparent;
+      border: none;
+    }
+    .backImage {
+      object-fit: cover;
+    }
+  }
+}
